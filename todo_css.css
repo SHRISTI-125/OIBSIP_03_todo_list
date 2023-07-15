@@ -1,18 +1,21 @@
 *{
-    margin: 28px;
+    margin: 20px;
+    padding: 10px 10px;
     box-sizing: border-box;
-    background-color: #f6cded;
+    background-color: #fccff2;
 }
 
-
+#para1 img{
+    width: 100px;
+}
 .para1{
     background: linear-gradient( rgb(66, 160, 248) pink);
-    padding: 10px;
+    padding: 30px 40px;
     background-color: #c28ebd;
     width: 100%;
-    margin: 1px;
+    margin: 10px;
 }
-#para1{
+.para1{
     border: #a75ba5;
     background-color: #8cd3fa;
     display: block;
@@ -20,7 +23,13 @@
     justify-content: center;
     background-color: rgb(251, 190, 239);
 }
-#ul{
+
+
+.ul{
+    margin: 0px;
+    padding: 0px;
+}
+.ul{
     list-style: armenian;
 }
 
@@ -31,16 +40,32 @@ input {
     width: 75%;
     padding: 10px;
     float: left;
-    font-size: 12px;
+    font-size: 15px;
 }
-#ul li{
+
+.ul li{
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 12px 8px 12px 8px;
     font-size: 18px;
 }
-#ul li:hover {
-    background: #bc2222;
+
+ul li:nth-child(odd){
+    background: #d49ad2;
 }
+ul li:nth-child(even){
+    background: #f6aac8;
+}
+ul li.checked:nth-child(even) {
+    background: #f893d2;
+    color: #fff;
+    text-decoration:line-through;
+}
+ul li.checked:nth-child(odd) {
+    background: #ebaaee;
+    color: #fff;
+    text-decoration:line-through;
+}
+
 #list{
     cursor: pointer;
 }
@@ -50,16 +75,27 @@ input {
     background-color: rgb(158, 89, 222);
 }
 
+
 .Button{
-    font-size: medium;
+    font-size: large;
     text-align: center;
-    pointer-events: stroke;
     cursor: pointer;
-    border: #4b525d;
-    border-radius: 10px;
-    box-sizing: border-box;
+    border: #8703df;
+    border-radius: 50%;
+    border: #360159;
     box-shadow: black;
+    background-color: #d188b8;
 }
 .Button:hover {
-    background-color: #ceb7cf;
+    background-color: white;
+}
+
+.close {
+    position: absolute;
+    padding: 10px 12px 10px 12px;
+}
+    
+.close:hover {
+    background-color: #f436ae;
+    color: rgb(251, 244, 248);
 }
